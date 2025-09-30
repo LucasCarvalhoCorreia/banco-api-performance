@@ -29,8 +29,7 @@ export default function() {
   const res = http.post(url, payload, params);
 
   check(res, {
-    'status is 201': (res) => res.status === 201,
-    //'transferencia criada com sucesso': (res) => res.json('message') === 'Transferência criada com sucesso',
+    'status is 201': (res) => res.status === 201
   });
   sleep(1);
 }
